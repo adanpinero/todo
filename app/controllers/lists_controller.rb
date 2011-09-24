@@ -3,7 +3,7 @@ class ListsController < ApplicationController
   def create
     @list = List.new(params[:list])
     if @list.save
-        flash[:notice] = "Your list was created"
+        flash[:notice] = "Tu lista ha sido creada"
     else
         flash[:alert] = "There was an error creating your list."
     end
